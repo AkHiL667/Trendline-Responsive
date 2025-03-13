@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial;
+}
+
+.nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: antiquewhite; */
+}
+
+.navi-1 {
+  display: flex;
+  padding: 30px;
+  gap: 3px;
+}
+
+.nav-1 {
+  background-color: black;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+
+}
+
+.nav-2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+
+}
+
+.nav-2 h4 {
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+.nav-2 span {
+  /* color: rgb(177, 169, 169); */
+}
+
+.nav-bottom {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  padding-left: 30px;
+  gap: 60px;
+  /* background-color: aqua; */
+}
+
+.nav-bottom h4 {
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.hero-section {
+  /* background-color: pink; */
+  width: 100%;
+  height: calc(100vh - 150px);
+}
+
+.text-space {
+  height: 40%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.text-space::-webkit-scrollbar {
+  background-color: transparent;
+  height: 7px;
+}
+
+.text-space::-webkit-scrollbar-thumb {
+  background-color: orangered;
+
+
+}
+
+.cont {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(226, 109, 109); */
+  height: 100%;
+  width: 50%;
+  /* border: 2px solid black; */
+}
+
+.cont h1 {
+  font-size: 8vw;
+  font-weight: 300;
+}
+
+.image-space {
+  display: flex;
+  height: 60%;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.image-space img {
+  flex-shrink: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-space::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width :600px) {
+  .nav-bottom {
+    display: none;
+  }
+
+  .nav {
+    height: 50px;
+    padding: 10px;
+  }
+
+  .navi-1 {
+    padding: 10px;
+  }
+
+  .nav-1 {
+
+    height: 20px;
+    width: 20px;
+
+  }
+
+  .nav-2 {
+    gap: 15px;
+    padding: 10px;
+
+  }
+
+  .nav-2 h4 {
+    font-size: 2.5vw;
+  }
+
+  .text-space {
+    height: 60%;
+
+
+  }
+
+  .cont h1 {
+    font-size: 9vw;
+    font-weight: 400;
+  }
+
+
+}
